@@ -6,7 +6,7 @@ services:
       context: ./server
       dockerfile: Dockerfile
     volumes:
-      - ./path/to/backend:/app
+      - ./server:/app
     ports:
       - "3000:3000"
     environment:
