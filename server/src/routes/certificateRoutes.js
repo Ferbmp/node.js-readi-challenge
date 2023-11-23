@@ -7,8 +7,8 @@ const router = express.Router();
 
 const storage = multer.memoryStorage();
 
-import { authenticate } from "../middleware/authenticateMiddleware.js";
-import { authorize } from "../middleware/authorizationMiddleware.js";
+import { authenticate } from "../middlewares/authenticateMiddleware.js";
+import { authorize } from "../middlewares/authorizationMiddleware.js";
 
 const upload = multer({
   storage: storage,
